@@ -59,6 +59,8 @@ client.connect(err => {
   
 });
 
-
+app.get('/',(req, res) => {
+    res.send("Hello world")
+})
 
 app.listen( process.env.PORT || 5000)
